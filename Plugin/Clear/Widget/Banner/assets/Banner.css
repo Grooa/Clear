@@ -1,0 +1,11 @@
+
+.ipWidget-Banner > div > .no-image {
+	width: 8em;
+	height: 4.5em;
+	outline: 1px dashed black;
+	cursor: pointer;
+}
+
+.ipWidget-Banner > div > img {
+	cursor: pointer;
+}

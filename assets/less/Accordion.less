@@ -1,0 +1,28 @@
+.ipWidget-Accordion {
+
+	.trigger {
+		text-decoration: none;
+		background: @frontColor1;
+		color: white;
+		display: block;
+		&::before {
+			content: '▸';
+			margin: 0 0.5em;
+		}
+	}
+
+	.content {
+		display: none;
+		border: 0.1em solid @frontColor1;
+		padding: 1em;
+	}
+
+	&.expanded {
+		.content {
+			display: block;
+		}
+		.trigger::before {
+			content: '▾';
+		}
+	}
+}

@@ -1,0 +1,131 @@
+body {
+	font-size: @ipFontSize;
+	font-family: @ipFontFamily;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: lighter;
+	color: @frontColor1;
+}
+
+p,
+.ipWidget p {
+	padding-left: 1em;
+}
+
+a,
+.ipWidget a {
+	color: @frontColor1;
+	text-decoration: underline;
+}
+
+.ipWidget-Banner,
+.ipWidget-CoverImage {
+	p {
+		font-size: @ipH3FontSize;
+	}
+
+	.button {
+		font-size: @ipFontSize;
+	}
+}
+
+#ipBlock-main > .ipWidget.ipWidget-Banner,
+#ipBlock-main > .ipWidget.ipWidget-CoverImage {
+	padding: 0;
+}
+
+
+
+.ipSkin-alternative {
+	.ipWidget h1,
+	.ipWidget h2,
+	.ipWidget h3,
+	h1,
+	h2,
+	h3 {
+		color: @frontColor2;
+	}
+
+	&.ipWidget a {
+		color: @frontColor2;
+	}
+}
+
+#ipBlock-main > .ipWidget {
+	max-width: @pageWidth;
+	margin: 1em auto;
+	padding: 0 0.5em;
+}
+
+main > form,
+main > .ipWidget {
+	max-width: 40em;
+	margin: 1em auto;
+	padding: 0 0.5em;
+}
+
+.ipWidget h1,
+.ipWidget h2,
+.ipWidget h3,
+h1,
+h2,
+h3 {
+	padding: 0.2em 0 0;
+}
+
+.ipModuleForm .form-control,
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+select {
+	height: auto;
+	background: white;
+	border: none;
+	border-bottom: 0.15em solid #cccccc;
+	padding: 0.2em;
+	box-shadow: none;
+	border-radius: 0;
+
+	&:focus {
+		border-bottom-color: @frontColor1;
+		box-shadow: none;
+	}
+}
+
+.ipwForm {
+	margin: 1em;
+}
+
+.ipWidget {
+	ul, ol {
+		list-style-position: outside;
+	}
+
+	li {
+		margin-left: 2em;
+	}
+}
+
+.ipWidget-Divider,
+#ipBlock-main > .ipWidget-Divider {
+	margin-top: 2em;
+	margin-bottom: 3em;
+	padding: 0;
+	border-bottom: 0.2em solid #cccccc;
+}
+
+.ipWidget img.ipsImage {
+	margin-left: 1em;
+}
+
+.ipWidget-Banner .ipWidget-Form {
+	  margin: 1em auto;
+	    max-width: 50%;
+}
+
+.ipModuleForm .checkbox input[type=checkbox] {
+	position: initial;
+	margin: 0 5px;
+}

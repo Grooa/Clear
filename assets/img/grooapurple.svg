@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="190.12328"
+   height="51.78125"
+   id="svg3226"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="grooapurple.svg"
+   inkscape:export-filename="/home/truls/Fossum Web/design/Newsletter/logo.png"
+   inkscape:export-xdpi="58.026058"
+   inkscape:export-ydpi="58.026058">
+  <defs
+     id="defs3228" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="97.246834"
+     inkscape:cy="-6.7115425"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:window-width="1871"
+     inkscape:window-height="1056"
+     inkscape:window-x="49"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata3231">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-523.73842,-480.01725)">
+    <path
+       style="fill:#800080;fill-opacity:1;stroke:none"
+       d="M 35.21875,4.78125 C 26.977953,7.6237 6.4375,17.372518 6.4375,28.9375 c 0,10.457372 13.596646,19.091657 22.78125,23.625 L 30.5,51.96875 C 23.567351,47.672297 13.974929,40.121116 14.25,30.0625 14.56919,18.390719 29.527671,9.4727119 36,6.09375 L 35.21875,4.78125 z M 43.625,9.375 c -0.245509,0.075452 -0.503319,0.1449111 -0.78125,0.25 -8.00141,3.02542 -23.0625,11.44091 -23.0625,20.15625 0,8.219584 9.982472,15.109411 17.53125,19.0625 l 1.25,-0.5625 C 32.917873,44.5851 25.972787,38.570178 26.1875,30.71875 26.454409,20.958563 38.934171,13.512039 44.375,10.65625 L 43.625,9.375 z m 13.6875,2.71875 0.125,0.1875 C 57.4414,12.27835 57.50001,12.25119 57.5,12.25 57.499891,12.22849 57.41704,12.15237 57.3125,12.09375 z M 51.8125,13 c -6.962296,3.024052 -17.59375,9.677643 -17.59375,16.375 0,6.193101 6.879397,11.52314 12.96875,14.96875 l 1.375,-0.65625 c -4.277004,-3.146088 -8.688215,-7.72884 -8.53125,-13.46875 0.189368,-6.924764 7.76271,-12.480786 12.875,-15.5 L 51.8125,13 z m 8.75,4.125 c -0.272711,0.0424 -0.547842,0.109249 -0.84375,0.21875 -4.69847,1.73862 -13.5,6.87737 -13.5,12.1875 0,4.540926 5.203526,8.411386 9.625,10.84375 L 56.75,39.9375 c -3.132772,-2.236108 -6.490719,-5.580936 -6.375,-9.8125 0.16402,-5.997852 7.838472,-10.419856 10.90625,-12 l -0.71875,-1 z"
+       transform="translate(519.30092,477.236)"
+       id="path2996"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#800080;fill-opacity:1;stroke:none;font-family:Sans;"
+       x="584.45544"
+       y="520.61407"
+       id="text3050-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3052-0"
+         x="584.45544"
+         y="520.61407"
+         style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#800080;fill-opacity:1;font-family:Open Sans;-inkscape-font-specification:Open Sans;">GROOA</tspan></text>
+  </g>
+</svg>

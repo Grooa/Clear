@@ -1,0 +1,125 @@
+@topNavHeight: 2em;
+@headerHeight: 4em;
+@headerBorderHeight: 0.2em;
+
+header {
+	min-height: @headerHeight;
+	border-bottom: @headerBorderHeight solid @frontColor1;
+	text-align: center;
+	background: white;
+
+	.menu,
+	.languages {
+		margin-top: @headerHeight - @topNavHeight;
+	}
+
+	&.header-fix {
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 100;
+	}
+
+	> div {
+		margin: 0 auto;
+		max-width: @pageWidth;
+	}
+}
+
+@media (max-width: 30em), (max-height: 20em), (max-width: 50em) and (max-height: 30em)  {
+	header {
+		display: none;
+	}
+}
+
+.top-logo {
+	float: left;
+	line-height: 1;
+	text-align: left;
+
+	img {
+		float: left;
+		height: @headerHeight - 0.5em;
+		margin: 0.25em 1em;
+	}
+
+	div {
+		display: inline-block;
+	}
+
+	.title {
+		margin-top: 0.3em;
+		font-size: 1.2 * @ipFontSizeBig;
+		font-weight: lighter;
+		color: @frontColor1;
+	}
+
+	.subtitle {
+		padding-left: 1em;
+		font-size: @ipFontSizeSmall;
+	}
+}
+
+
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		display: inline-block;
+		padding: (@topNavHeight - 1em)/2;
+		height: 1em;
+		margin: 0 0.2em;
+		text-decoration: none;
+		color: white;
+	}
+
+	li:hover {
+		background: lighten(@frontColor1, 10);
+	}
+
+	li.active {
+		background: white;
+		
+		a {
+			color: @frontColor1;
+		}
+	}
+}
+
+.menu.inverted {
+	li:hover a,
+   	li.active a {
+		color: white;
+	}
+
+	li.active {
+		background: @frontColor1;
+	}
+
+	li:hover {
+		background: lighten(@frontColor1, 10);
+	}
+
+	a {
+		color: @frontColor1;
+	}
+}
+
+nav {
+	background: @frontColor1;
+	height: @topNavHeight;
+	text-align: center;
+	border-bottom: @headerBorderHeight solid white;
+}
+
+.languages {
+	float: right;
+}

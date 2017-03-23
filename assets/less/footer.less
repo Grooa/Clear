@@ -1,0 +1,40 @@
+
+footer {
+	display: flex;
+	min-height: 3em;
+	max-width: @pageWidth;
+	clear: both;
+	margin: 5em auto 0em;
+	padding: 1em;
+	text-align: center;
+	align-items: center;
+
+	> div {
+		flex-grow: 1;
+	}
+}
+
+.bottom-logo {
+	text-align: center;
+
+	img {
+		height: 3em;
+		display: block;
+		margin: 0 auto;
+	}
+
+	p {
+		font-weight: lighter;
+		color: @frontColor2;
+	}
+}
+
+@media (max-width: 30em) {
+	footer {
+		display: block;
+
+		> * {
+			margin: 1em 0;
+		}
+	}
+}
