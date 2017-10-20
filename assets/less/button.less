@@ -1,22 +1,42 @@
-.button {
-	border-radius: 0;
-	border: none;
+.button,
+button {
+    .z-1;
+    .border-radius;
+    .shadow-transition;
+
+    background-color: @primaryColor;
+    border: none;
+
+    color: #FFF;
+
+    font-size: 1.0em;
+    font-weight: 100;
+
+    margin: .5em auto;
+
+    padding: .5em 2em;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        .z-2;
+        background-color: lighten(@primaryColor, 5%);
+    }
+
+    &[disabled] {
+        background: #eee;
+        color: #aaa;
+        cursor: inherit;
+
+        &:hover {
+            background: #eee;
+        }
+    }
 }
-
-.button[disabled] {
-	background: #eee;
-	color: #aaa;
-	cursor: inherit;
-
-	&:hover {
-		background: #eee;
-	}
-}
-
-
 
 .ipSkin-alternative {
-	.button {
-		background: @frontColor2;
-	}
+    .button {
+        background: @frontColor2;
+    }
 }

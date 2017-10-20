@@ -1,40 +1,46 @@
 
 footer {
-	display: flex;
-	min-height: 3em;
-	max-width: @pageWidth;
-	clear: both;
-	margin: 5em auto 0em;
-	padding: 1em;
-	text-align: center;
-	align-items: center;
+    align-items: center;
 
-	> div {
-		flex-grow: 1;
-	}
+    box-sizing: border-box;
+
+    display: flex;
+    min-height: 3em;
+
+    margin: 5em auto 0;
+
+    padding: 1em;
+
+    text-align: center;
+
+    width: 100%;
+
+    > div {
+        flex-grow: 1;
+    }
 }
 
 .bottom-logo {
-	text-align: center;
+    text-align: center;
 
-	img {
-		height: 3em;
-		display: block;
-		margin: 0 auto;
-	}
+    img {
+        height: 3em;
+        display: block;
+        margin: 0 auto;
+    }
 
-	p {
-		font-weight: lighter;
-		color: @frontColor2;
-	}
+    p {
+        font-weight: lighter;
+        color: @frontColor2;
+    }
 }
 
 @media (max-width: 30em) {
-	footer {
-		display: block;
+    footer {
+        display: block;
 
-		> * {
-			margin: 1em 0;
-		}
-	}
+        > * {
+            margin: 1em 0;
+        }
+    }
 }

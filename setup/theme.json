@@ -1,9 +1,9 @@
 {
     "title": "Clear",
-    "version": "1.00",
+    "version": "2.00",
     "doctype": "HTML5", /* HTML5, XHTML1_STRICT, XHTML1_TRANSITIONAL, XHTML1_FRAMESET, HTML4_STRICT, HTML4_TRANSITIONAL, HTML4_FRAMESET  */
     "thumbnail": "thumbnail.png",
-    "author": "Truls Rustad Fossum",
+    "author": "Fredrik F. Lindhagen",
     "widget": { /* Image cropping settings for widgets. Require theme reinstall to take affect. */
         "image": {
             "width": 1180, /* For responsiveness and optimization it should be the same as the widest block */

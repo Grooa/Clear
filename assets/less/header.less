@@ -3,123 +3,193 @@
 @headerBorderHeight: 0.2em;
 
 header {
-	min-height: @headerHeight;
-	border-bottom: @headerBorderHeight solid @frontColor1;
-	text-align: center;
-	background: white;
+    .z-1;
+    box-sizing: border-box;
 
-	.menu,
-	.languages {
-		margin-top: @headerHeight - @topNavHeight;
-	}
+    text-align: center;
 
-	&.header-fix {
-		position: fixed;
-		width: 100%;
-		left: 0;
-		top: 0;
-		z-index: 100;
-	}
+    background: #FFF;
 
-	> div {
-		margin: 0 auto;
-		max-width: @pageWidth;
-	}
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: .5em;
+
+    z-index: 10;
+
+    .navigation {
+        align-items: flex-end; // Align to right side
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center; // Center vertically
+
+        padding: 0;
+    }
+
+    @media screen and (max-width: 40em) {
+        flex-direction: column;
+
+        padding: 0;
+
+        .logo {
+            align-self: center;
+
+            padding: .5em;
+        }
+
+        .navigation {
+            align-items: stretch;
+
+            flex-direction: row;
+
+            justify-content: space-between;
+
+            padding: 0;
+        }
+
+        .menu.primary {
+            background-color: @primaryColor;
+
+            justify-content: space-around;
+            width: 100%;
+
+            > li {
+                color: #FFF;
+
+                flex: 1;
+
+                padding: .3em .5em;
+
+                &:hover {
+                    background-color: lighten(@primaryColor, 10%);
+                    color: #FFF;
+                }
+            }
+        }
+
+        .menu.secondary {
+            display: none;
+        }
+    }
 }
 
-@media (max-width: 30em), (max-height: 20em), (max-width: 50em) and (max-height: 30em)  {
-	header {
-		display: none;
-	}
+.logo {
+    line-height: 1;
+
+    text-align: left;
+
+    display: grid;
+
+    grid-gap: .5em;
+
+    grid-template-areas: "image title" "image subtitle";
+
+    text-decoration: none;
+
+    img {
+        grid-area: image;
+        height: 3rem;
+    }
+
+    > a {
+        text-decoration: none;
+    }
+
+    h1.title {
+        color: @frontColor1;
+
+        font-size: 1.5em;
+        font-weight: 800;
+
+        grid-area: title;
+
+        margin: 0;
+
+        padding: 0;
+    }
+
+    .subtitle {
+        grid-area: subtitle;
+        font-size: @ipFontSizeSmall;
+    }
 }
-
-.top-logo {
-	float: left;
-	line-height: 1;
-	text-align: left;
-
-	img {
-		float: left;
-		height: @headerHeight - 0.5em;
-		margin: 0.25em 1em;
-	}
-
-	div {
-		display: inline-block;
-	}
-
-	.title {
-		margin-top: 0.3em;
-		font-size: 1.2 * @ipFontSizeBig;
-		font-weight: lighter;
-		color: @frontColor1;
-	}
-
-	.subtitle {
-		padding-left: 1em;
-		font-size: @ipFontSizeSmall;
-	}
-}
-
 
 .menu {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: inline-block;
+    align-items: stretch;
 
-	li {
-		display: inline-block;
-	}
+    display: flex;
 
-	a {
-		display: inline-block;
-		padding: (@topNavHeight - 1em)/2;
-		height: 1em;
-		margin: 0 0.2em;
-		text-decoration: none;
-		color: white;
-	}
+    justify-content: flex-end;
 
-	li:hover {
-		background: lighten(@frontColor1, 10);
-	}
+    list-style: none;
 
-	li.active {
-		background: white;
-		
-		a {
-			color: @frontColor1;
-		}
-	}
+    margin: 0;
+
+    padding: 0;
+
+    li {
+        color: @primaryColor;
+        transition: all .2s ease;
+    }
+
+    a {
+        color: inherit;
+
+        display: inline-block;
+
+        padding: .2em .5em;
+
+        text-decoration: none;
+        transition: all .2s ease;
+    }
+
+    li:hover {
+        color: lighten(@frontColor1, 10);
+    }
+
+    li.active {
+        background: transparent;
+
+        a {
+            font-weight: 800;
+        }
+    }
+
+    &.secondary {
+        font-size: 0.8em;
+    }
 }
 
 .menu.inverted {
-	li:hover a,
-   	li.active a {
-		color: white;
-	}
+    li:hover a,
+    li.active a {
+        color: white;
+    }
 
-	li.active {
-		background: @frontColor1;
-	}
+    li.active {
+        background: @frontColor1;
+    }
 
-	li:hover {
-		background: lighten(@frontColor1, 10);
-	}
+    li:hover {
+        background: lighten(@frontColor1, 10);
+    }
 
-	a {
-		color: @frontColor1;
-	}
+    a {
+        color: @frontColor1;
+    }
 }
 
 nav {
-	background: @frontColor1;
-	height: @topNavHeight;
-	text-align: center;
-	border-bottom: @headerBorderHeight solid white;
+    background: @frontColor1;
+    height: @topNavHeight;
+    text-align: center;
+    border-bottom: @headerBorderHeight solid white;
 }
 
 .languages {
-	float: right;
+    float: right;
 }

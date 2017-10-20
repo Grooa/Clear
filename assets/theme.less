@@ -2,6 +2,17 @@
  * Main less file. Mainly imports other bits and pieces.
  */
 
+.border-radius { border-radius: 2px; }
+.shadow-transition { transition: all 0.3s cubic-bezier(.25,.8,.25,1);}
+
+
+.z-1 { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+.z-1-hover { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
+.z-2 { box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
+.z-3 { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
+.z-4 { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
+.z-5 { box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); }
+
 // import system ipContent.less file
 @import "ipContent.less";
 
@@ -15,23 +26,32 @@
 @import "less/Banner.less";
 @import "less/Accordion.less";
 
+@import "less/lists.less";
+@import "less/object.less";
+
 // Custom settings
 @pageWidth: 60em;
 
 // Open Sans font
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,700');
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700');
 
 // Colors?
-@frontColor1: #800080;
-@frontColor2: #005000;
+@frontColor1: #BA68C8;
+@frontColor2: #4A4A4A;
+
+@primaryColor: @frontColor1;
+@textColor: #4A4A4A;
+@iconColor: #FFF;
 
 // Fontsw
 @ipFontSize: 1rem;
-@ipFontFamily: "Open Sans", sans-serif;
+@ipFontFamily: "Lato", "Open Sans", sans-serif;
 @ipFontFamilyHeadlines: @ipFontFamily;
 @ipH1Color: @frontColor1;
 @ipH2Color: @frontColor1;
 @ipH3Color: @frontColor1;
+@ipTextColor: #4A4A4A;
 @ipH1FontSize: 2.5em;
 @ipH2FontSize: 1.75em;
 @ipH3FontSize: 1.5em;
